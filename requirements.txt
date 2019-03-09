@@ -3,6 +3,7 @@ qbittorrent
 fish
 i3
 mariadb
+python-mongoengine
 mysql-workbench
 chromium
 libinput
