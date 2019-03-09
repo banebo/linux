@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 
-sudo pacman -Syu
-echo ""
-read -p "[+] Press Enter to continue..."
+sudo pacman -Syu > $HOME/update.log
