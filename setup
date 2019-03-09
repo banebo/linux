@@ -19,7 +19,7 @@ printf "\n[?] Setup vim? [y/n]: "
 read choice
 if [[ $choice == 'y' ]]; then
     git clone -q https://github.com/banebo/vim $HOME/vim
-    ./$HOME/vim/setup
+    bash $HOME/vim/setup
     rm -rf $HOME/vim
 fi
 printf "\t[+] Done.\n"
@@ -29,7 +29,7 @@ printf "[?] Setup i3? [y/n]: "
 read $choice
 if [[ $choice == 'y' ]]; then
     git clone -q https://github.com/banebo/i3 $HOME/i3
-    ./$HOME/i3/setup
+    bash $HOME/i3/setup
     rm -rf $HOME/i3
 fi
 printf "\t[+] Done.\n"
@@ -37,7 +37,7 @@ printf "\t[+] Done.\n"
 # set fish as deffault shell
 read -p "[?] Set fish as deffault shell? [y/n]: " $choice
 if [[ $choice == 'y' ]]; then
-    usermod -s /usr/bin/fish $USER
+    sudo usermod -s /usr/bin/fish $USER
 fi
 printf "\t[+] Done.\n"
 
@@ -45,6 +45,12 @@ printf "\t[+] Done.\n"
 cp -r scripts/* $HOME/.bin
 
 # copy fish functions
+if [[ ! -d $HOME/.config/fish ]]; then
+    mkdir $HOME/.config/fish
+fi
+if [[ ! -d $HOME/.config/fish/functions ]];then
+    mkdir $HOME/.config/fish/functions ]]
+fi
 cp -r fish_functions/* $HOME/.config/fish/functions/
 
 printf "[+] All done.\n\n"
