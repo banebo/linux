@@ -32,14 +32,14 @@ if [[ $choice == 'y' ]]; then
     ./$HOME/i3/setup
     rm -rf $HOME/i3
 fi
-printf "\t[+] Done."
+printf "\t[+] Done.\n"
 
 # set fish as deffault shell
 read -p "[?] Set fish as deffault shell? [y/n]: " $choice
 if [[ $choice == 'y' ]]; then
     usermod -s /usr/bin/fish $USER
 fi
-printf "\t[+] Done."
+printf "\t[+] Done.\n"
 
 # copy scripts -> $HOME/.bin
 cp -r scripts/* $HOME/.bin
@@ -47,5 +47,5 @@ cp -r scripts/* $HOME/.bin
 # copy fish functions
 cp -r fish_functions/* $HOME/.config/fish/functions/
 
-printf "[+] All done."
+printf "[+] All done.\n\n"
 exit 0
