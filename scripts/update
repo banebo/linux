@@ -1,0 +1,5 @@
+#!/user/bin/env bash
+
+sudo pacman -Syu
+echo ""
+read -p "[+] Press Enter to continue..."
