@@ -33,3 +33,9 @@ ufw
 networkmanager
 nm-connection-editor
 openssh
+ttf-liberation
+noto-fonts
+ttf-bitstream-vera
+ttf-droidttf-inconsolata
+ttf-indic-otf
+htop
