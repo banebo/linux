@@ -1,0 +1,21 @@
+{
+  "settingsVersion": "1.64.5",
+  "exclusionRules": [],
+  "filterLinkHints": false,
+  "waitForEnterForFilteredHints": true,
+  "hideHud": false,
+  "keyMappings": "# Insert your preferred key mappings here.\n\n# history back-forward\nmap < goBack\nmap > goForward\n\n# move tabs\nmap H moveTabLeft\nmap L moveTabRight\n\n# tab mute/unmute toggle\nmap m toggleMuteTab\n\n# remove not needed key bindings\nunmap <<\nunmap >>\nunmap <c-e> \nunmap <c-y>\nunmap <a-f>\nunmap gt\nunmap gT",
+  "linkHintCharacters": "sadfjklewtmpgh",
+  "linkHintNumbers": "0123456789",
+  "newTabUrl": "about:newtab",
+  "nextPatterns": "next,more,newer,>,›,→,»,≫,>>",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
+  "regexFindMode": false,
+  "ignoreKeyboardLayout": false,
+  "scrollStepSize": 60,
+  "smoothScroll": true,
+  "grabBackFocus": true,
+  "searchEngines": "d: https://duckduckgo.com/?q=%s DuckDuckGo\nr: https://www.reddit.com/search?q=%s Reddit\ng: https://www.google.com/search?q=%s Google\nyt: https://www.youtube.com/results?search_query=%s YouTube\ngh: https://github.com/search?q=%s GitHub",
+  "searchUrl": "https://www.google.com/search?q=",
+  "userDefinedLinkHintCss": "div > .vimiumHintMarker {\n/* linkhint boxes */\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF785),\n  color-stop(100%,#FFC542));\nborder: 1px solid #E3BE23;\n}\n\ndiv > .vimiumHintMarker span {\n/* linkhint text */\ncolor: black;\nfont-weight: bold;\nfont-size: 12px;\n}\n\ndiv > .vimiumHintMarker > .matchingCharacter {\n}"
+}
