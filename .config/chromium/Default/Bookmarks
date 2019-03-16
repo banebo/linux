@@ -5,9 +5,6 @@
          "children": [ {
             "date_added": "13197132027241424",
             "id": "5",
-            "meta_info": {
-               "last_visited_desktop": "13197182998513212"
-            },
             "name": "GitHub",
             "type": "url",
             "url": "https://github.com/banebo"
@@ -20,9 +17,6 @@
          }, {
             "date_added": "13197132073065203",
             "id": "7",
-            "meta_info": {
-               "last_visited_desktop": "13197181035408318"
-            },
             "name": "Facebook",
             "type": "url",
             "url": "https://www.facebook.com/login/"
