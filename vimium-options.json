@@ -12,7 +12,7 @@
   "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
   "regexFindMode": false,
   "ignoreKeyboardLayout": false,
-  "scrollStepSize": 60,
+  "scrollStepSize": 30,
   "smoothScroll": true,
   "grabBackFocus": true,
   "searchEngines": "d: https://duckduckgo.com/?q=%s DuckDuckGo\nr: https://www.reddit.com/search?q=%s Reddit\ng: https://www.google.com/search?q=%s Google\nyt: https://www.youtube.com/results?search_query=%s YouTube\ngh: https://github.com/search?q=%s GitHub",
