@@ -16,6 +16,6 @@ function ytdl
     end
 
     echo -e "\n[*] Output location directory: $out_dir\n"
-    youtube-dl --extract-audio --audio-format mp3 -o "$out_dir/%(title)s.%(ext)s" $argv
+    youtube-dl --extract-audio --audio-format mp3 --embed-thumbnail -o "$out_dir/%(title)s.%(ext)s" $argv
     echo ""
 end
