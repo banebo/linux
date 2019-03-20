@@ -81,14 +81,13 @@ visualizer_sync_interval = 20
 ##
 visualizer_type = spectrum
 #
-#visualizer_look = ●卐
-#visualizer_look = 卐
+visualizer_look = "~•"
 #
 #visualizer_color = blue, cyan, green, yellow, magenta, red
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
-visualizer_color = 41, 83, 119, 155, 185, 215, 209, 203, 197, 161
+visualizer_color = "black,magenta,blue,cyan,green,yellow,red,white"
 #
 ##### system encoding #####
 ##
@@ -184,7 +183,7 @@ message_delay_time = 1
 #
 song_list_format = {$4%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 #
-song_status_format = {{$8"%t"}} {$4%f}
+song_status_format = {{$4"%t"}} {$4%f}
 #
 song_library_format = {%n - }{%t}|{%f}
 #
@@ -192,9 +191,9 @@ alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 #
 alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
 #
-current_item_prefix = $(yellow)$r$b
+current_item_prefix = $(yellow)$r
 #
-current_item_suffix = $/r$(end)$/b
+current_item_suffix = $/r$(end)
 #
 current_item_inactive_column_prefix = $(magenta)$r
 #
@@ -317,7 +316,16 @@ browser_display_mode = columns
 ## Note: You can specify third character which will be used to build 'empty'
 ## part of progressbar.
 ##
-progressbar_look = ->
+#progressbar_look = ->
+progressbar_boldness = "yes"
+progressbar_color = "black:b"
+progressbar_elapsed_color = "red"
+progressbar_look = "─╼"
+#
+#progressbar_elapsed_color = red:b
+statusbar_color = yellow
+statusbar_time_color = yellow
+#
 #
 ## Available values: database, playlist.
 ##
@@ -341,11 +349,11 @@ media_library_albums_split_by_date = no
 #
 #default_tag_editor_pattern = %n - %t
 #
-#header_visibility = yes
+header_visibility = no
 #
 #statusbar_visibility = yes
 #
-#titles_visibility = yes
+titles_visibility = no
 #
 #header_text_scrolling = yes
 #
@@ -512,28 +520,20 @@ use_console_editor = yes
 #
 empty_tag_color = magenta
 #
-#header_window_color = magenta
+header_window_color = black
 #
 #volume_color = default
 #
-#state_line_color = default
+state_line_color = green
 #
-#state_flags_color = default:b
+state_flags_color = magenta
 #
 main_window_color = green
 #
 #color1 = white
 #
 #color2 = green
-#
-progressbar_color = yellow:b
-#
-progressbar_elapsed_color = red:b
-#
-statusbar_color = yellow
-#
-statusbar_time_color = yellow:b
-#
+
 #player_state_color = default:b
 #
 #alternative_ui_separator_color = black:b
