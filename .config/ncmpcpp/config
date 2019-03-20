@@ -70,7 +70,7 @@ visualizer_in_stereo = yes
 ## that sane values start with >=10.
 ##
 #
-visualizer_sync_interval = 30
+visualizer_sync_interval = 20
 #
 ##
 ## Note: To enable spectrum frequency visualization you need to compile ncmpcpp
@@ -102,7 +102,7 @@ visualizer_color = 41, 83, 119, 155, 185, 215, 209, 203, 197, 161
 ## if your encoding is different.
 ##
 #
-#system_encoding = ""
+system_encoding = "UTF-8"
 #
 ##### delays #####
 #
@@ -118,7 +118,7 @@ message_delay_time = 1
 ##### song format #####
 ##
 ## For a song format you can use:
-##
+#
 ## %l - length
 ## %f - filename
 ## %D - directory
@@ -184,7 +184,7 @@ message_delay_time = 1
 #
 song_list_format = {$4%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 #
-song_status_format = $b{{$8"%t"}} $3by {$4%a{ $3in $7%b{ (%y)}} $3}|{$8%f}
+song_status_format = {{$8"%t"}} {$4%f}
 #
 song_library_format = {%n - }{%t}|{%f}
 #
@@ -192,7 +192,7 @@ alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 #
 alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
 #
-current_item_prefix = $(cyan)$r$b
+current_item_prefix = $(yellow)$r$b
 #
 current_item_suffix = $/r$(end)$/b
 #
@@ -419,7 +419,7 @@ startup_screen = media_library
 #
 display_volume_level = no
 #
-#display_bitrate = no
+#display_bitrate = yes
 #
 #display_remaining_time = no
 #
@@ -442,7 +442,7 @@ ignore_leading_the = yes
 #
 #block_search_constraints_change_if_items_found = yes
 #
-#mouse_support = yes
+mouse_support = no
 #
 #mouse_list_scroll_whole_page = yes
 #
@@ -520,19 +520,19 @@ empty_tag_color = magenta
 #
 #state_flags_color = default:b
 #
-main_window_color = white
+main_window_color = green
 #
 #color1 = white
 #
 #color2 = green
 #
-progressbar_color = black:b
+progressbar_color = yellow:b
 #
-progressbar_elapsed_color = blue:b
+progressbar_elapsed_color = red:b
 #
-statusbar_color = red
+statusbar_color = yellow
 #
-statusbar_time_color = cyan:b
+statusbar_time_color = yellow:b
 #
 #player_state_color = default:b
 #
