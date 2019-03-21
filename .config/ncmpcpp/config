@@ -181,11 +181,11 @@ message_delay_time = 1
 ## Note: colors can be nested.
 ##
 #
-song_list_format = {$4%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
+song_columns_list_format = "(5)[black]{} (25)[green]{f} (23)[magenta]{l}"
 #
 song_status_format = {{$4"%t"}} {$4%f}
 #
-song_library_format = {%n - }{%t}|{%f}
+song_library_format = {$3%f}
 #
 alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 #
@@ -197,11 +197,11 @@ current_item_suffix = $/r$(end)
 #
 current_item_inactive_column_prefix = $(magenta)$r
 #
-current_item_inactive_column_suffix = $/r$(end)
+current_item_inactive_column_suffix = $/r
 #
-#now_playing_prefix = $b
+now_playing_prefix = $u
 #
-#now_playing_suffix = $/b
+now_playing_suffix = $/u
 #
 #browser_playlist_prefix = "$2playlist$9 "
 #
@@ -300,7 +300,7 @@ browser_display_mode = columns
 #
 #discard_colors_if_item_is_selected = yes
 #
-#show_duplicate_tags = true
+#show_duplicate_tags = yes
 #
 #incremental_seeking = yes
 #
@@ -421,7 +421,7 @@ startup_screen = media_library
 #
 #jump_to_now_playing_song_at_start = yes
 #
-#ask_before_clearing_playlists = yes
+ask_before_clearing_playlists = yes
 #
 #clock_display_seconds = no
 #

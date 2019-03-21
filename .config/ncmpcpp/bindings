@@ -552,22 +552,23 @@ def_key "R"
 def_key "r"
   toggle_random
 
-
-
 #numbers
 def_key "1"
   show_media_library
 def_key "2"
   show_playlist
 def_key "3"
-  show_visualizer
+  show_playlist_editor
 def_key "4"
-    show_clock
+  show_visualizer
 def_key "5"
+    show_clock
+def_key "6"
   show_tag_editor
 
-
 def_key "C"
+  clear_main_playlist
+def_key "c"
   clear_playlist
 def_key "j"
     scroll_down
@@ -596,11 +597,16 @@ def_key "n"
 def_key "N"
     previous_found_item
 
-# not used but bound
-def_key "J"
-    move_sort_order_down
+# selecting
 def_key "K"
-    move_sort_order_up
+  select_item
+  scroll_up
+
+def_key "J"
+  select_item
+  scroll_down
+
+# not used but bound
 def_key "h"
   jump_to_parent_directory
 def_key "l"
@@ -617,7 +623,7 @@ def_key "t"
   show_tag_editor
 def_key "v"
   show_visualizer
-def_key "c"
+def_key "="
     show_clock
 def_key "G"
   move_end
@@ -636,5 +642,7 @@ def_key "b"
   change_browse_mode
 def_key "x"
   delete_playlist_items
+def_key "x"
+  delete_stored_playlist
 def_key "P"
   show_playlist
