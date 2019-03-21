@@ -70,7 +70,7 @@ visualizer_in_stereo = yes
 ## that sane values start with >=10.
 ##
 #
-visualizer_sync_interval = 20
+visualizer_sync_interval = 15
 #
 ##
 ## Note: To enable spectrum frequency visualization you need to compile ncmpcpp
@@ -108,7 +108,7 @@ system_encoding = "UTF-8"
 ## Time of inactivity (in seconds) after playlist highlighting will be disabled
 ## (0 = always on).
 ##
-#playlist_disable_highlight_delay = 5
+playlist_disable_highlight_delay = 0
 #
 ## Defines how long messages are supposed to be visible.
 ##
@@ -181,7 +181,7 @@ message_delay_time = 1
 ## Note: colors can be nested.
 ##
 #
-song_columns_list_format = "(5)[black]{} (25)[green]{f} (23)[magenta]{l}"
+song_columns_list_format = "(30)[black]{} (10)[yellow]{aE} (25)[green]{f} (4)[magenta]{l}(5)[black]{}"
 #
 song_status_format = {{$4"%t"}} {$4%f}
 #
@@ -308,7 +308,7 @@ browser_display_mode = columns
 #
 #volume_change_step = 2
 #
-#autocenter_mode = no
+autocenter_mode = yes
 #
 #centered_cursor = no
 #
@@ -371,7 +371,7 @@ titles_visibility = no
 #
 #generate_win32_compatible_filenames = yes
 #
-#allow_for_physical_item_deletion = no
+allow_for_physical_item_deletion = no
 #
 ##
 ## Note: If you set this variable, ncmpcpp will try to get info from last.fm in
