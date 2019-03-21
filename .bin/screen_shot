@@ -1,5 +1,5 @@
 #!/bin/sh
-case "$(printf "select area\\ncurrent window\\nfull screen\\nselect area (copy)\\ncurrent window (copy)\\nfull screen (copy)" | dmenu -l 6 -i -p "Screenshot:")" in
+case "$(printf "select area\\ncurrent window\\nfull screen\\nselect area (copy)\\ncurrent window (copy)\\nfull screen (copy)" | rofi -dmenu -l 6 -i -p "Screenshot:")" in
 	"select area") maim -s $HOME/Pictures/ss"$(date '+%d-%m-%Y_%H-%M-%S').png" ;;
 	"current window") maim -i $HOME/Pictures/"$(xdotool getactivewindow)" ss"$(date '+%d-%m-%Y_%H-%M-%S').png" ;;
 	"full screen") maim $HOME/Pictures/ss"$(date '+%d-%m-%Y_%H-%M-%S').png" ;;
