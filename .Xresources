@@ -12,7 +12,6 @@ rofi.width:                          30
 rofi.lines:                          10
 rofi.columns:                        1
 rofi.font:                           Monospace 11
-!rofi.bc:                            #353944
 ! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
 rofi.color-normal: #000000,  #00b300,  #000000,  #383838,  #e5e540
 rofi.color-urgent: #000000,  #00b300,  #000000,  #383838,  #e5e540
@@ -36,6 +35,8 @@ rofi.color-enabled:                  true
 !-------------------------------------------------------------------------------
 ! URXVT Config
 !-------------------------------------------------------------------------------
+URxvt.transparent:    true
+URxvt.shading:        25
 URxvt.font:           xft:monospace:size=11
 URxvt.scrollBar:      False
 URxvt.cursorBlink:    True
@@ -45,6 +46,7 @@ URxvt.iso14755_52:    False
 ! URL handling (install urxvt-perls)
 URxvt.perl-ext-common: default,matcher,url-select,keyboard-select
 URxvt.colorUL: #7f78e2
+! select URL alt+n
 URxvt.keysym.M-n: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-launcher: /usr/bin/xdg-open
