@@ -36,7 +36,7 @@ rofi.color-enabled:                  true
 ! URXVT Config
 !-------------------------------------------------------------------------------
 URxvt.transparent:    true
-URxvt.shading:        25
+URxvt.shading:        35
 URxvt.font:           xft:monospace:size=11
 URxvt.scrollBar:      False
 URxvt.cursorBlink:    True
