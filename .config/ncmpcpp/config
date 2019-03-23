@@ -181,7 +181,7 @@ message_delay_time = 1
 ## Note: colors can be nested.
 ##
 #
-song_columns_list_format = "(30)[black]{} (10)[yellow]{aE} (25)[green]{f} (4)[magenta]{l}(5)[black]{}"
+song_columns_list_format = "(24)[black]{} (10)[yellow]{aE} (25)[green]{f} (4)[magenta]{l}(5)[black]{}"
 #
 song_status_format = {{$4%a -}} {$4%f}
 #
@@ -401,7 +401,7 @@ allow_for_physical_item_deletion = no
 ##
 ## Note: You can define startup screen by choosing screen from the list above.
 ##
-startup_screen = media_library
+startup_screen = browser
 #
 ##
 ## Note: You can define startup slave screen by choosing screen from the list

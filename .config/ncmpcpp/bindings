@@ -554,7 +554,7 @@ def_key "r"
 
 #numbers
 def_key "1"
-  show_media_library
+  show_browser
 def_key "2"
   show_playlist
 def_key "3"
