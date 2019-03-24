@@ -181,7 +181,7 @@ message_delay_time = 1
 ## Note: colors can be nested.
 ##
 #
-song_columns_list_format = "(24)[black]{} (10)[yellow]{aE} (25)[green]{f} (4)[magenta]{l}(5)[black]{}"
+song_columns_list_format = "(31)[black]{} (10)[yellow]{aE} (25)[green]{f} (4)[magenta]{l}(5)[black]{}"
 #
 song_status_format = {{$4%a -}} {$4%f}
 #
@@ -222,7 +222,7 @@ now_playing_suffix = $/u
 ## browser_sort_mode are "name", "mtime", "format" and "noop".
 ##
 #
-#browser_sort_mode = name
+browser_sort_mode = name
 #
 #browser_sort_format = {%a - }{%t}|{%f} {(%l)}
 #
