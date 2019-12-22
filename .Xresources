@@ -13,12 +13,12 @@ rofi.lines:                          10
 rofi.columns:                        1
 rofi.font:                           Monospace 11
 ! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
-rofi.color-normal: #000000,  #00b300,  #000000,  #383838,  #e5e540
-rofi.color-urgent: #000000,  #00b300,  #000000,  #383838,  #e5e540
-rofi.color-active: #000000,  #00b300,  #000000,  #383838,  #e5e540
+rofi.color-normal: #000000,  #e60000,  #000000,  #383838,  #e60000
+rofi.color-urgent: #000000,  #b51a17,  #000000,  #383838,  #e5e540
+rofi.color-active: #000000,  #e60000,  #000000,  #383838,  #e60000
 
 !                  'background', 'border'
-rofi.color-window: #000000,      #00b300
+rofi.color-window: #000000,      #e60000
 rofi.bw:                             1
 rofi.location:                       0
 rofi.padding:                        10
@@ -36,7 +36,7 @@ rofi.color-enabled:                  true
 ! URXVT Config
 !-------------------------------------------------------------------------------
 URxvt.transparent:    true
-URxvt.shading:        35
+URxvt.shading:        20
 URxvt.font:           xft:monospace:size=11
 URxvt.scrollBar:      False
 URxvt.cursorBlink:    True
