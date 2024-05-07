@@ -53,19 +53,31 @@ msg_info "Configuring DNS resolver"
 cat <<EOF >/etc/resolv.conf
 nameserver 1.1.1.1
 nameserver 8.8.8.8
-nameserver 4.4.4.4
+nameserver 8.8.4.4
 EOF
 chk_status "Failed to edit the DNS: /etc/resolv.conf"
 
+do_ssh(){
+	msg_info "Installing OpenSSH..."
+	case $OSID in
+		debian)
+			apt install openssh-server -y 1> /dev/null
+			systemctl enable sshd
+		;;
+		alpine)
+			apk add openssh
+			rc-update add sshd
+		;;
+	esac
 
-msg_info "Configuring the SSH"
-if ! [ -d /root/.ssh ]; then
-	mkdir /root/.ssh
-fi
-if ! [ -f /etc/ssh/sshd_config ]; then
-	msg_nok "Could not find the file: /etc/ssh/sshd_config, skipping"
-else
-	cat <<EOF >/etc/ssh/sshd_config
+	msg_info "Configuring the SSH"
+	if ! [ -d /root/.ssh ]; then
+		mkdir /root/.ssh
+	fi
+	if ! [ -f /etc/ssh/sshd_config ]; then
+		msg_nok "Could not find the file: /etc/ssh/sshd_config, skipping"
+	else
+		cat <<EOF >/etc/ssh/sshd_config
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
 
@@ -194,15 +206,16 @@ Subsystem       sftp    /usr/lib/openssh/sftp-server
 #       PermitTTY no
 #       ForceCommand cvs server
 EOF
-	chk_status "Failed to edit the sshd config: /etc/ssh/sshd_config"
-fi
+		chk_status "Failed to edit the sshd config: /etc/ssh/sshd_config"
+	fi
 
-# SETUP THE SSH ROOT PUBLIC KEY TO THE /root/.ssh/authorized_keys
-echo -e "$QUESTION Enter SSH public key: "
-read ssh_public
-echo $ssh_public > /root/.ssh/authorized_keys
-unset ssh_public
-chk_status "Failed to add the public key to the authorized_key"
+	# SETUP THE SSH ROOT PUBLIC KEY TO THE /root/.ssh/authorized_keys
+	echo -e "$QUESTION Enter SSH public key: "
+	read ssh_public
+	echo $ssh_public > /root/.ssh/authorized_keys
+	unset ssh_public
+	chk_status "Failed to add the public key to the authorized_key"
+}
 
 
 # EDIT THE PACKAGE SOURCES
